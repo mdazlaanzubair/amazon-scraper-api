@@ -1,0 +1,46 @@
+{
+  "name": "amazon-scraper-api",
+  "version": "1.0.0",
+  "description": "A web scraper that crawls on amazon to extract product information and return it in JSON format.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mdazlaanzubair/amazon-product-crawler.git"
+  },
+  "keywords": [
+    "amazon",
+    "products",
+    "hunt",
+    "node",
+    "express",
+    "postman",
+    "javascript",
+    "js",
+    "html",
+    "web",
+    "page",
+    "crawl",
+    "crawling",
+    "crawler",
+    "information",
+    "info",
+    "extraction",
+    "api",
+    "application",
+    "programming",
+    "interface",
+    "product",
+    "research",
+    "product",
+    "details"
+  ],
+  "author": "Muhammad Azlaan Zubair",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mdazlaanzubair/amazon-product-crawler/issues"
+  },
+  "homepage": "https://github.com/mdazlaanzubair/amazon-product-crawler#readme"
+}
