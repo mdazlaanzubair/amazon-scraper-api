@@ -24,5 +24,3 @@ app.use("/api", trackerRoutes);
 app.listen(PORT, () => {
   console.log(`Amazon Scraper Server is running on PORT: ${PORT}`);
 });
-
-export default app;
