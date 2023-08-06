@@ -5,8 +5,7 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.mjs",
-    "dev": "nodemon server.mjs",
-    "vercel-build": "echo scraper started"
+    "dev": "nodemon server.mjs"
   },
   "repository": {
     "type": "git",
