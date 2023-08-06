@@ -5,17 +5,20 @@ import { elemSelector, userAgent } from "../utils/constants.mjs";
 
 // function to scrap amazon product page
 export const scrapProductData = async (req, res) => {
-  const { productURL } = req.body;
+  const { productId } = req.params;
 
   try {
+    // creating url for getting product page
+    const productURL = `https://www.amazon.com/dp/${productId}`;
+
     // requesting product page from amazon server using axios
     const response = await Unirest.get(productURL).headers(userAgent);
     const htmlRawPageData = response.body;
     const productDetails = extractDetails(htmlRawPageData);
+    productDetails.id = productId;
 
     res.status(200).json({
       msg: "Amazon scraper route hit.",
-      productURL,
       productDetails,
     });
   } catch (error) {

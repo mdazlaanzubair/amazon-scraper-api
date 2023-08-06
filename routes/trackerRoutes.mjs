@@ -3,6 +3,6 @@ import { scrapProductData } from "../controllers/getProductController.mjs";
 const router = Router();
 
 // Route to the amazon product scraper
-router.post("/product", scrapProductData);
+router.get("/products/:productId", scrapProductData);
 
 export default router;
